@@ -484,7 +484,7 @@ struct DebugView: View {
                         }
                         
                         if let lastCheck = rateManager.logReader.lastCheckTime {
-                            Text("Last check: \(formatTime(lastCheck))")
+                            Text("Last check: \(lastCheck.formatted(date: .omitted, time: .standard))")
                                 .font(.caption2)
                                 .foregroundColor(.secondary)
                         }
