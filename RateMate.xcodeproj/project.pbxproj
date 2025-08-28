@@ -18,6 +18,7 @@
 		A1001016 /* MusicTrackInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001017 /* MusicTrackInfo.swift */; };
 		A1001018 /* ScrollingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001019 /* ScrollingText.swift */; };
 		A1001021 /* AppleMusicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001022 /* AppleMusicHelper.swift */; };
+		A1001023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1001024 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A1001019 /* ScrollingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingText.swift; sourceTree = "<group>"; };
 		A1001022 /* AppleMusicHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicHelper.swift; sourceTree = "<group>"; };
 		A1001020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1001024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				A1001000 /* RateMateApp.swift */,
 				A1001020 /* Info.plist */,
+				A1001024 /* Assets.xcassets */,
 				A1001100 /* Views */,
 				A1001200 /* Services */,
 				A1001300 /* Controllers */,
@@ -172,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1001023 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
