@@ -363,10 +363,9 @@ struct DebugView: View {
                         ForEach(testRates, id: \.self) { rate in
                             Button("\(Int(rate/1000))k") {
                                 Task {
-                                    guard let device = rateManager.audioDevice.currentDevice else { return }
                                     logMessages.append("Force setting \(Int(rate/1000))kHz...")
-                                    let success = await rateManager.audioDevice.setNominalRate(device.id, rateHz: rate)
-                                    logMessages.append(success ? "✅ Success" : "❌ Failed")
+                                    await rateManager.setManualRate(rate)
+                                    logMessages.append("✅ Force set \(Int(rate/1000))kHz")
                                 }
                             }
                             .buttonStyle(.bordered)
